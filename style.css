@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,800&family=Roboto:wght@400;700&display=swap");
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(./fonts/Fontspring-DEMO-proximanovacond-bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+  height: 4em;
+
+  background-color: #252525;
+}
+
+.menu a p {
+  margin-left: 10%;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Roboto serif, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu .redes-sociais {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.redes-sociais img {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.redes-sociais ul li,
+img {
+  display: inline-flex;
+  list-style: none;
+}
+
+.logo-fantastika {
+  margin: 20%;
+  width: 2.5em;
+}
+
+.imagem_cabecalho {
+  background: url(./assets/cao-header-desktop.png) no-repeat top center/cover;
+
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+}
+
+.imagem_cabecalho a > img {
+  animation: float 2s ease-in-out infinite;
+}
+
+h1 {
+  font-family: Roboto serif, sans-serif;
+  color: #fff;
+  padding: 5% 0 4% 0;
+}
+
+.servicos {
+  width: 100%;
+  font-size: 27px;
+  align-items: center;
+}
+
+a button {
+  padding: 2%;
+  margin-top: 3%;
+  width: 50%;
+  height: 4rem;
+
+  border: none;
+  border-radius: 24px;
+
+  color: #f4f2f3;
+  font-size: 27px;
+  text-align: center;
+  cursor: pointer;
+}
+
+a button:hover {
+  transition: background 0.5s;
+  background-color: #fd6a9a;
+}
+
+.servicos > .banho-tosa {
+  background: url(./assets/pitbull.png) no-repeat top center/cover;
+  height: 100vh;
+  width: 100%;
+  color: #3a342f;
+
+  display: block;
+}
+
+.banho-tosa > .info {
+  position: relative;
+  top: 25%;
+  left: 5%;
+}
+
+.info {
+  width: 40%;
+}
+
+.info h2 {
+  font-family: Roboto serif, sans-serif;
+}
+
+.info p {
+  font-family: Roboto, sans-serif;
+}
+
+.banho-tosa button {
+  background-color: #3a342f;
+  font-size: 27px;
+  font-family: Roboto;
+}
+
+.servicos > .mordomia-saudavel {
+  background: url(./assets/chiuhuahua-desktop.png) no-repeat top center/cover;
+  height: 100vh;
+
+  color: #fff;
+}
+
+.mordomia-saudavel > .info {
+  position: relative;
+  top: 25%;
+  left: 60%;
+}
+
+.mordomia-saudavel button {
+  background: #f4f2f3;
+  color: #000;
+  font-size: 27px;
+}
+
+.mordomia-saudavel button:hover {
+  color: #fff;
+}
+
+.patrocinios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  color: #fd6a9a;
+}
+
+.patrocinios ul h2 {
+  font-family: Roboto serif, sans-serif;
+  font-weight: 200;
+}
+
+.patrocinios ul li {
+  display: inline;
+  width: 100%;
+  margin: 0 4em 0 5em;
+}
+
+.patrocinios ul li:first-child {
+  font-family: Roboto serif, sans-serif;
+  font-weight: bold;
+}
+
+.patrocinios ul li:last-child {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: bold;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  background-color: #eb4a7b;
+  color: #f4f2f3;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #3a342f;
+}
+
+footer h2 {
+  font-family: Roboto serif, sans-serif;
+}
+
+footer ul {
+  margin: 2%;
+  list-style: none;
+}
+
+footer li {
+  margin-top: 10%;
+
+  font-family: Roboto, sans-serif;
+  font-size: 1em;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-30px);
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    max-width: 100%;
+  }
+
+  .menu .redes-sociais li img {
+    display: none;
+  }
+
+  .servicos > .banho-tosa {
+    background: url(./assets/pitbull-mobile.png) no-repeat top center/cover;
+  }
+
+  .banho-tosa .info {
+    position: relative;
+    top: 5%;
+    width: 80%;
+    font-size: 70%;
+  }
+
+ .info button {
+    width: 60%;
+    font-size: 20px;
+  }
+
+  .servicos > .mordomia-saudavel {
+    background-image: url(./assets/chiuhuahua-mobile.png);
+  }
+
+  .mordomia-saudavel .info {
+    position: relative;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    font-size: 70%;
+  }
+
+  .patrocinios {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .patrocinios ul li {
+    display: block;
+    width: 100%;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  .menu-mobile {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  .menu-mobile img {
+    display: inline;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .menu-mobile p {
+    font-family: Roboto serif, sans-serif;
+    font-weight: bold;
+  }
+
+  .menu-mobile > .redes-sociais {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+}
